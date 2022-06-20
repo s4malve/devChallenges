@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 500"
+	opacity="0.06">
+	<defs>
+		<radialGradient id="a" cx="584.54" cy="1107.49" r="520.4"
+			gradientTransform="matrix(.4 0 0 .23 -217.67 -254.89)"
+			gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#4d4d4d" />
+			<stop offset=".02" stop-color="#545454" />
+			<stop offset=".2" stop-color="#858585" />
+			<stop offset=".37" stop-color="#aeaeae" />
+			<stop offset=".54" stop-color="#cecece" />
+			<stop offset=".71" stop-color="#e5e5e5" />
+			<stop offset=".86" stop-color="#f2f2f2" />
+			<stop offset="1" stop-color="#f7f7f7" />
+		</radialGradient>
+		<radialGradient id="c" cx="58.21" cy="793.57" r="520.27"
+			gradientTransform="matrix(.88 0 0 .23 228.41 -7.72)" xlink:href="#a" />
+		<radialGradient id="d" cx="122.9" cy="328.32" r="520.32"
+			gradientTransform="matrix(.78 0 0 .22 614.57 318.6)" xlink:href="#a" />
+		<clipPath id="b">
+			<path style="fill:none" d="M0 0h750v500H0z" />
+		</clipPath>
+	</defs>
+	<g style="isolation:isolate">
+		<g style="clip-path:url(#b)">
+			<path transform="rotate(135 284.339 247.025)"
+				style="fill:url(#c);opacity:.51;mix-blend-mode:color-burn"
+				d="M-82 173.49h732.67v147.06H-82z" />
+		</g>
+	</g>
+</svg>
