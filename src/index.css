@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	::selection {
+		@apply bg-stone-900 text-stone-100 dark:bg-stone-100 dark:text-stone-900
+	}
+
+	html {
+		@apply scroll-smooth
+	}
+
+	body {
+		@apply bg-stone-100 dark:bg-stone-900 text-stone-900 dark:text-stone-100;
+	}
+}
+
+@layer components {
+	.btn {
+		@apply py-3 px-12 font-semibold rounded-sm 
+	}
+
+	.btn-primary {
+		@apply before:inset-0 dark:bg-stone-100 bg-stone-900 text-stone-100 dark:text-stone-900 relative before:absolute before:w-full before:h-full before:inline-block before:border-2 before:rounded-sm before:border-stone-900 dark:before:border-stone-200 before:-translate-y-3 before:-translate-x-3 transition-colors hover:before:translate-y-0 before:transition-transform hover:before:translate-x-0 hover:bg-stone-100 dark:hover:bg-stone-900 hover:text-stone-900 dark:hover:text-stone-100 active:bg-stone-900 dark:active:bg-stone-100 active:text-stone-100 dark:active:text-stone-900
+	}
+}
