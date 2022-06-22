@@ -1,19 +1,20 @@
 import Card from '../components/Card'
 import Header from '../components/Header'
 
-function App() {
-  const projects = []
+import data from '../data.json'
 
+function App() {
   return (
-    <div className='bg-pattern bg-no-repeat bg-center bg-cover'>
-      <div className='w-11/12 max-w-7xl mx-auto'>
+    <div className='bg-center bg-no-repeat bg-cover bg-pattern'>
+      <div className='w-11/12 mx-auto max-w-7xl'>
         <Header />
-        <main className='pb-12 pt-20 lg:pt-14' id='projects'>
-          <h2 className='font-bold text-3xl text-center mb-10'>Projects</h2>
+        <main className='pt-20 pb-12 lg:pt-14' id='projects'>
+          <h2 className='mb-10 text-3xl font-bold text-center'>Projects</h2>
           <section className='grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6'>
-            {projects.map(({ cover, difficulty, title, description }) => (
+            {data.map(({ id, cover, difficulty, title, description }) => (
               <Card
                 key={title}
+                id={id}
                 cover={cover}
                 difficulty={difficulty}
                 title={title}
