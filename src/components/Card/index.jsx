@@ -2,21 +2,23 @@ import PropTypes from 'prop-types'
 
 function Card({ id, title, cover, difficulty, description }) {
   return (
-    <a href={`/projects/${id}`} key={title}>
-      <article className='rounded-sm border-stone-600 border hover:border-stone-500 hover:shadow-md dark:hover:shadow-stone-800 hover:shadow-stone-200'>
-        <img
-          src={cover}
-          alt=''
-          className='w-full rounded-tr-sm rounded-tl-sm'
-        />
-        <div className='mt-8 grid gap-y-3 relative pt-3 pl-6 pb-6'>
+    <a href={`/projects/${id}/index.html`} key={title}>
+      <article className='border rounded-sm border-stone-600 hover:border-stone-500 hover:shadow-md dark:hover:shadow-stone-800 hover:shadow-stone-200'>
+        <figure className='overflow-hidden'>
+          <img
+            src={cover}
+            alt=''
+            className='w-full transition-transform rounded-tl-sm rounded-tr-sm hover:scale-105'
+          />
+        </figure>
+        <div className='relative grid pt-3 pb-6 pl-6 mt-8 gap-y-3'>
           <span
-            className='py-2 px-4 rounded-sm capitalize absolute bg-primary font-semibold text-stone-700 text-sm left-5 -top-11'
+            className='absolute px-4 py-2 text-sm font-semibold capitalize rounded-sm bg-primary text-stone-700 left-5 -top-11'
             style={{ backgroundColor: difficulty.color }}
           >
             {difficulty.name}
           </span>
-          <h3 className='font-bold text-2xl'>{title}</h3>
+          <h3 className='text-2xl font-bold'>{title}</h3>
           <p className='text-stone-400'>{description}</p>
         </div>
       </article>
